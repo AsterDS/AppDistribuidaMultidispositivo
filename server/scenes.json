@@ -1,0 +1,58 @@
+{
+  "start": {
+    "description": "You are at the edge of a dark forest. You hear guttural growling—an orc stands in your path!",
+    "choices": [
+      {
+        "option": "1",
+        "prompt": "Fight the orc",
+        "next": "fight_orc"
+      },
+      {
+        "option": "2",
+        "prompt": "Sneak into a nearby dungeon entrance",
+        "next": "dungeon_entrance"
+      },
+      {
+        "option": "3",
+        "prompt": "Run away",
+        "next": "run_away"
+      }
+    ]
+  },
+
+  "fight_orc": {
+    "description": "You engage the orc in combat!",
+    "choices": []
+  },
+
+  "dungeon_entrance": {
+    "description": "You find a dark doorway leading underground. It's damp and eerie...",
+    "choices": [
+      {
+        "option": "1",
+        "prompt": "Go inside",
+        "next": "victory"
+      },
+      {
+        "option": "2",
+        "prompt": "Retreat to the forest",
+        "next": "start"
+      }
+    ]
+  },
+
+  "run_away": {
+    "description": "You run away safely, but it's not very heroic.\nGame over!",
+    "choices": []
+  },
+
+  "victory": {
+    "description": "You have prevailed!\nGame over!",
+    "choices": []
+  },
+
+  "death": {
+    "description": "You have been slain!\nGame over!",
+    "choices": []
+  }
+}

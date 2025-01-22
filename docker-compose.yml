@@ -1,0 +1,12 @@
+﻿services:
+  server:
+    build:
+      context: ./server
+    container_name: python-server
+    ports:
+      - "5000:5000"
+
+  client:
+    build:
+      context: ./client
+    container_name: python-client
